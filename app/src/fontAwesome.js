@@ -1,0 +1,58 @@
+// import the library
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+// import your icons
+import {
+  faMapMarker,
+  faCircle,
+  faWind,
+  faCompass,
+  faCloud,
+  faBan,
+  faPercentage,
+  faTint,
+  faHeadSideMask,
+  faHome,
+  faUser,
+  faBars,
+  faTimes,
+  faEdit,
+  faTrash,
+  faAngleDown,
+  faAngleUp,
+  faCloudSunRain,
+  faCalendarCheck,
+  faCalendarDay,
+  faCalendarAlt,
+  faTags,
+  faFlag,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+  faMapMarker,
+  faCircle,
+  faWind,
+  faCompass,
+  faCloud,
+  faBan,
+  faPercentage,
+  faTint,
+  faHeadSideMask,
+  faHome,
+  faUser,
+  faBars,
+  faTimes,
+  faEdit,
+  faTrash,
+  faAngleDown,
+  faAngleUp,
+  faCloudSunRain,
+  faCalendarCheck,
+  faCalendarDay,
+  faCalendarAlt,
+  faTags,
+  faFlag,
+  faCheck,
+  // more icons go here
+);

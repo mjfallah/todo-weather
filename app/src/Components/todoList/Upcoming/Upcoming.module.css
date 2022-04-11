@@ -1,0 +1,79 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subContainer {
+  width: 90%;
+  margin-top: 40px;
+}
+.headLine {
+  display: flex;
+  align-items: center;
+  background-color: rgb(36, 0, 70);
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.headLine > h3 {
+  margin: 0;
+  font-style: italic;
+}
+.headLine > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 15px;
+  padding: 0px 5px;
+  color: rgb(36, 0, 70);
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.scheduled {
+  border: 2px solid rgb(36, 0, 70);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.items {
+  height: fit-content;
+  max-height: 85vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.items > h4 {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .subContainer {
+    width: 95%;
+    margin-top: 85px;
+  }
+  .headLine > h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .subContainer {
+    width: 95%;
+    margin-top: 120px;
+  }
+  .headLine > h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .subContainer {
+    width: 310px;
+  }
+  .headLine > h3 {
+    font-size: 14px;
+  }
+}

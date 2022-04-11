@@ -1,0 +1,177 @@
+.mainContainer {
+  position: fixed;
+  width: 100%;
+  z-index: 400;
+}
+.container {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(36, 0, 70);
+  color: white;
+  position: relative;
+  z-index: 301;
+}
+.container a {
+  color: white;
+  text-decoration: none;
+}
+.rightBtns,
+.leftBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barsIcon {
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 20px;
+  cursor: pointer;
+}
+.weatherIcon {
+  margin: 0 50px;
+}
+.userIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userIcon > span {
+  margin: 0 10px;
+  cursor: default;
+}
+.userIcon span:last-child {
+  width: 45px;
+  height: 45px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hideMenu {
+  position: absolute;
+  top: -900px;
+  transition: top ease-in-out 0.5s;
+  z-index: 300;
+}
+.showMenu {
+  position: absolute;
+  top: 50px;
+  transition: top ease-in-out 0.5s;
+  z-index: 300;
+}
+.addBtn {
+  width: 100px;
+  height: 37px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 0 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(36, 0, 70);
+  border: 1px solid rgb(36, 0, 70);
+}
+
+@media screen and (max-width: 1024px) {
+  .barsIcon {
+    margin: 0 10px;
+  }
+  .userIcon > span {
+    margin: 0 5px;
+  }
+  .weatherIcon,
+  .addBtn {
+    margin: 0 7px;
+  }
+  .container a {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .barsIcon {
+    margin: 0 10px;
+  }
+  .userIcon > span {
+    margin: 0 5px;
+  }
+  .weatherIcon,
+  .addBtn {
+    margin: 0 25px;
+  }
+  .container a {
+    margin: 0 10px;
+  }
+  .showMenu {
+    top: 95px;
+  }
+  .searchContainer {
+    order: 3;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .rightBtns,
+  .leftBtns {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .barsIcon {
+    margin: 0 10px;
+  }
+  .userIcon > span {
+    margin: 0 5px;
+  }
+  .weatherIcon,
+  .addBtn {
+    margin: 0 5px;
+  }
+  .container a {
+    margin: 0 10px;
+  }
+  .showMenu {
+    top: 135px;
+  }
+  .searchContainer {
+    order: 3;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    flex-direction: column;
+  }
+  .rightBtns,
+  .leftBtns {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .barsIcon {
+    margin: 0 10px;
+  }
+  .userIcon > span {
+    margin: 0 5px;
+  }
+  .weatherIcon,
+  .addBtn {
+    margin: 0 5px;
+  }
+  .container a {
+    margin: 0 10px;
+  }
+  .showMenu {
+    top: 135px;
+  }
+  .searchContainer {
+    order: 3;
+  }
+}

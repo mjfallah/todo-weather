@@ -1,0 +1,11 @@
+@font-face {
+  font-family: iransans;
+  src: url('../public/iransans.woff') format('woff');
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: iransans,'Trebuchet MS',arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

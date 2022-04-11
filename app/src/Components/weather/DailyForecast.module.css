@@ -1,0 +1,193 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.container {
+  width: fit-content;
+  margin-top: 50px;
+}
+.daysContainer {
+  margin-left: 15px;
+}
+.day {
+  border-radius: 10px 10px 0 0;
+  padding: 3px 7px;
+  margin: 10px;
+  border-top: 2px solid #3a2d80;
+  border-right: 2px solid #3a2d80;
+  border-left: 2px solid #3a2d80;
+  cursor: pointer;
+  background-color: #3a2d80;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+.activeDay {
+  background-color: #f1faee;
+  color: #000;
+  transition: background-color 0.3s ease-in-out;
+}
+.day:hover {
+  background-color: #f1faee;
+  color: #000;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #3a2d80;
+  border-radius: 10px;
+  background-color: #f1faee;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.detail {
+  width: fit-content;
+  color: #fff;
+  background-color: #3a2d80;
+  border-radius: 8px;
+  padding: 3px 5px;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+.detail > span {
+  margin-left: 5px;
+}
+.sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sunrise {
+  margin: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sunrise::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    #ffdb00 0%,
+    #feff9b 70%,
+    #ffffff 100%
+  );
+  margin-right: 10px;
+}
+.sunset {
+  margin: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sunset::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    #fea128 0%,
+    #ffb92e 40%,
+    #ffffff 100%
+  );
+  margin-right: 10px;
+}
+.temprature {
+  font-size: 15px;
+  margin: 10px;
+}
+.icon {
+  margin: 10px 25px;
+}
+.chart {
+  padding: 5px 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+  .daysContainer {
+    margin-left: 5px;
+  }
+  .daysContainer > span {
+    font-size: 13px;
+    padding-bottom: 5px;
+  }
+  .day {
+    margin: 5px;
+  }
+  .details {
+    font-size: 12px;
+    margin: 0;
+  }
+  .temprature {
+    font-size: 11px;
+    margin: 5px;
+  }
+  .icon {
+    margin: 5px;
+  }
+  .sun {
+    font-size: 12px;
+  }
+  .sunrise,
+  .sunset {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .daysContainer {
+    margin-left: 5px;
+  }
+  .daysContainer > span {
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+  .day {
+    margin: 5px;
+  }
+  .details {
+    font-size: 12px;
+    flex-direction: column;
+    margin: 0;
+  }
+  .temprature {
+    font-size: 11px;
+    margin: 5px;
+  }
+  .icon {
+    margin: 5px;
+  }
+  .sun {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .sunrise,
+  .sunset {
+    margin: 5px;
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  margin: 10px 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+.title > div {
+  margin-right: 15px;
+  border: 2px solid rgb(36, 0, 70);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(36, 0, 70);
+  background-color: #f1faee;
+}
+.filterTasks {
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  margin-top: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.labels {
+  width: 100%;
+}
+.Priorities > select {
+  border-radius: 6px;
+  border: 1px solid rgb(36, 0, 70);
+  background-color: #f1faee;
+  padding: 3px 5px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+.filterTasks > div:last-child {
+  width: 100%;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+  .title {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    margin-top: 130px;
+  }
+}

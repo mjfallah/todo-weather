@@ -1,0 +1,131 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subContainer {
+  width: 90%;
+  margin-top: 40px;
+}
+.pageTitle > span {
+  margin-left: 10px;
+  font-size: small;
+  color: rgb(112, 107, 107);
+}
+.scheduled-headLine {
+  display: flex;
+  align-items: center;
+  background-color: rgb(36, 0, 70);
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.overDue-headLine {
+  display: flex;
+  align-items: center;
+  background-color: #e63946;
+  padding: 8px;
+  color: #fff;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+.scheduled-headLine > h3,
+.overDue-headLine > h3 {
+  margin: 0;
+  font-style: italic;
+}
+.scheduled-headLine > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 15px;
+  padding: 0px 5px;
+  color: rgb(36, 0, 70);
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.overDue-headLine > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 15px;
+  padding: 0px 5px;
+  color: #e63946;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.overDue {
+  border: 2px solid #e63946;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.scheduled {
+  border: 2px solid rgb(36, 0, 70);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.items {
+  height: fit-content;
+  max-height: 45vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.items > h4 {
+  margin-left: 15px;
+}
+/* specefic styles of edit modal transition from react-transition-group */
+.modal--enter {
+  opacity: 0;
+  transform: scale(0.4);
+}
+.modal--enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity, transform 300ms cubic-bezier(0.7, 0, 0.84, 0);
+}
+.modal--exit {
+  opacity: 1;
+}
+.modal--exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
+}
+@media screen and (max-width: 768px) {
+  .subContainer {
+    width: 95%;
+    margin-top: 85px;
+  }
+  .scheduled-headLine > h3,
+  .overDue-headLine > h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .subContainer {
+    width: 95%;
+    margin-top: 120px;
+  }
+  .scheduled-headLine > h3,
+  .overDue-headLine > h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .subContainer {
+    width: 310px;
+  }
+  .scheduled-headLine > h3,
+  .overDue-headLine > h3 {
+    font-size: 14px;
+  }
+}

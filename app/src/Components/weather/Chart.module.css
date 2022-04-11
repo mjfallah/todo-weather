@@ -1,0 +1,43 @@
+.chartType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chartType > div {
+    padding: 3px 6px;
+    margin: 5px 25px;
+    border: 1px solid #3a2d80;
+    border-radius: 8px;
+    background-color: rgb(241, 241, 241);
+    color: #000;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.active {
+    background-color: #3a2d80 !important;
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.chartType > div:hover {
+    background-color: #3a2d80;
+    color: #fff;
+}
+canvas {
+    width: 100% !important;
+}
+@media screen and (max-width : 480px) {
+    .chartType {
+        font-size: 12px;
+    }
+    .chartType > div {
+        margin: 5px;
+    }
+}
+@media screen and (max-width : 320px) {
+    .chartType {
+        font-size: 10px;
+    }
+    .chartType > div {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,121 @@
+.searchBox {
+  width: 35vw;
+  height: 35px;
+  box-sizing: border-box;
+  z-index: 305;
+}
+.searchBox > input {
+  border-radius: 5px;
+  line-height: 28px;
+  font-size: 16px;
+  width: inherit;
+  height: 35px;
+  border: none;
+  text-indent: 7px;
+}
+.searchBox > input:focus {
+  outline: none;
+}
+.results {
+  width: inherit;
+  background-color: #fff;
+  height: fit-content;
+  max-height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #000000;
+  margin-top: -5px;
+  padding-top: 5px;
+  box-shadow: 0px 17px 23px 13px rgba(0, 0, 0, 0.78);
+}
+.result {
+  border-radius: 6px;
+  margin: 5px;
+  margin-top: 8px;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #f1faee;
+}
+.result:hover {
+  cursor: pointer;
+  box-shadow: 2px 3px 15px 3px rgba(0, 0, 0, 0.8);
+}
+.headInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.overDueBadge {
+  font-size: 14px;
+  padding: 0 3px;
+  color: #fff;
+  background-color: #e63946;
+  border-radius: 4px;
+  margin: 0 8px;
+}
+.checkedBadge {
+  font-size: 14px;
+  padding: 0 3px;
+  color: #fff;
+  background-color: rgb(86, 201, 86);
+  border-radius: 4px;
+  margin: 0 8px;
+}
+.labelColorBadge,
+.priorityColorBadge {
+  margin: 0 3px;
+}
+.date {
+  font-size: 14px;
+  padding: 0 3px;
+  border-radius: 4px;
+  color: rgb(36, 0, 70);
+  font-weight: 600;
+}
+.description {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchBox {
+    width: max(350px, 45vw);
+  }
+  .results {
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .searchBox {
+    width: 95vw;
+    margin: 8px 0;
+  }
+  .results {
+    max-height: 330px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .searchBox {
+    width: 95vw;
+    margin: 8px 0;
+  }
+  .results {
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .searchBox {
+    width: 95vw;
+    margin: 8px 0;
+  }
+  .results {
+    max-height: 300px;
+  }
+}

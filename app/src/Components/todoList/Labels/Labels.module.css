@@ -1,0 +1,261 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.subContainer {
+  width: 45%;
+  margin: 10px 25px;
+  margin-top: 50px;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title > div {
+  margin-right: 15px;
+  border: 2px solid rgb(36, 0, 70);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(36, 0, 70);
+  background-color: #f1faee;
+}
+h4 {
+  margin-right: 20px;
+}
+.addBtn {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addBtn > button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #f1faee;
+  color: rgb(36, 0, 70);
+  border: 2px solid rgb(36, 0, 70);
+  cursor: pointer;
+}
+.labelsList > div:first-child > span {
+  width: fit-content;
+  padding: 2px 6px;
+  border-top: 2px solid #3a2d80;
+  border-right: 2px solid #3a2d80;
+  border-left: 2px solid #3a2d80;
+  border-radius: 6px 6px 0 0;
+  margin-left: 15px;
+  background-color: #f1faee;
+  font-weight: 600;
+}
+.labelsList > div:last-child {
+  border: 2px solid #3a2d80;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f1faee;
+}
+.label {
+  width: fit-content;
+  padding: 3px 8px;
+  margin: 8px;
+  box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+  background-color: #fff;
+}
+.label > span {
+  margin: 0 5px;
+}
+.labelTrash {
+  color: #3a2d80;
+  cursor: pointer;
+}
+.filterTasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  align-self: flex-start;
+  margin-top: 65px;
+  margin-right: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.labels {
+  width: 100%;
+}
+.labels > select {
+  border-radius: 6px;
+  border: 1px solid rgb(36, 0, 70);
+  background-color: #f1faee;
+  padding: 3px 5px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+.tasks {
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  max-height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #000000;
+}
+
+/* styles of adding new label modal */
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  z-index: 330;
+}
+.nameContainer {
+  margin: 15px 10px;
+}
+.nameInput {
+  width: 200px;
+  height: 26px;
+  border: none;
+  text-indent: 7px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.nameInput:focus {
+  outline: none;
+}
+.colorInputContainer {
+  margin: 15px 10px;
+}
+.colorInput {
+  margin-left: 15px;
+}
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .subContainer {
+    margin: 10px 5px;
+    margin-top: 50px;
+  }
+  h4 {
+    margin: 0 5px;
+  }
+  .filterTasks {
+    margin: 0 5px;
+    margin-top: 70px;
+  }
+  .label {
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .labelsList > div:first-child > span {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .subContainer {
+    width: 96%;
+    margin: 10px 5px;
+    margin-top: 95px;
+  }
+  h4 {
+    margin: 0 5px;
+  }
+  .filterTasks {
+    width: 96%;
+    margin: 0 5px;
+  }
+  .label {
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .labelsList > div:first-child > span {
+    font-size: 18px;
+    padding-bottom: 2px;
+  }
+  .tasks {
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .subContainer {
+    width: 96%;
+    margin: 10px 5px;
+    margin-top: 130px;
+  }
+  h4 {
+    margin: 0 5px;
+  }
+  .filterTasks {
+    width: 96%;
+    margin: 0 5px;
+  }
+  .label {
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  .labelsList > div:first-child > span {
+    font-size: 17px;
+    padding-bottom: 2px;
+  }
+  .tasks {
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .subContainer {
+    width: 96%;
+    margin: 10px 5px;
+  }
+  h4 {
+    margin: 0 5px;
+  }
+  .filterTasks {
+    width: 96%;
+    margin: 0 5px;
+  }
+  .label {
+    padding: 3px 8px;
+    margin: 5px;
+    font-size: 12px;
+  }
+  .labelsList > div:first-child > span {
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+  .tasks {
+    max-height: 350px;
+  }
+}
