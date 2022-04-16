@@ -28,7 +28,7 @@ Weather forecast data are retrieved from [weatherapi.com](https://www.weatherapi
 
 #### برنامه To Do و برنامه ریزی کارها به همراه قابلیت وضعیت آب و هوا ، توسعه داده شده با Reactjs
 
-#### جهت مشاهده دمو این برنامه [کلیک کنید] (https://wondrous-cannoli-a25f92.netlify.app)
+#### جهت مشاهده دمو این برنامه [کلیک کنید](https://wondrous-cannoli-a25f92.netlify.app)
 
 ### ویژگی ها و قابلیت ها
 
